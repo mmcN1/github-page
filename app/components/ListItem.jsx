@@ -9,7 +9,7 @@ const ListItem = ({ user }) => {
     <div className="flex  flex-col   w-full">
       <div className=" flex  w-full h-1/3 text-xs md:flex-row md:justify-between md:text-lg ">
         <img
-          className="flex flex-row w-1/3 h-full rounded-xl mr-2 md:mr-7 lg:w-1/12 lg:h-full "
+          className="flex flex-row w-1/3 h-full rounded-xl mr-2 md:mr-7 lg:w-1/12 lg:h-full  "
           src={user.avatar_url}
           alt=""
         />
@@ -22,7 +22,7 @@ const ListItem = ({ user }) => {
               href={`https://github.com/${user.login}`}
               target="_blank"
             >
-              <p className=" inline-block hover:scale-90 hover:text-violet-600">@{user.login}</p>
+              <p className=" inline-block hover:scale-90 transition-all hover:text-violet-600  ">@{user.login}</p>
             </a>
           </div>
           <div className="flex text-zinc-400 from-slate-700  italic text-sm md:text-lg ">
