@@ -22,7 +22,7 @@ const ListItem = ({ user }) => {
               href={`https://github.com/${user.login}`}
               target="_blank"
             >
-              <p className=" inline-block transition-all hover:scale-90  hover:text-violet-600  ">@{user.login}</p>
+              <p className=" inline-block transition-all hover:scale-90  hover:to-green-300  ">@{user.login}</p>
             </a>
           </div>
           <div className="flex text-zinc-400 from-slate-700  italic text-sm md:text-lg ">
