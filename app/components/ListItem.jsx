@@ -3,7 +3,7 @@ import React from "react";
 
 
 const ListItem = ({ user }) => {
-  const date = new Date(user.created_at);
+  
 
   return (
     <div className="flex  flex-col   w-full">
@@ -22,11 +22,11 @@ const ListItem = ({ user }) => {
               href={`https://github.com/${user.login}`}
               target="_blank"
             >
-              <p className=" inline-block transition-all hover:scale-90  hover:text-purple-500  ">@{user.login}</p>
+              <p className=" inline-block transition-all hover:scale-90  hover:text-purple-500 ">@{user.login}</p>
             </a>
           </div>
           <div className="flex text-zinc-400 from-slate-700  italic text-sm md:text-lg ">
-            <h1>Joined {date.toDateString()}</h1>
+            <h1>Joined {new Date(user.created_at).toDateString()}</h1>
           </div>
         </div>
       </div>
