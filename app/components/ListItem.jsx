@@ -30,7 +30,7 @@ const ListItem = ({ user }) => {
           </div>
         </div>
       </div>
-      <p className="font-extralight text-white from-neutral-900 italic text-sm text-center md:text-lg">
+      <p className="font-extralight   italic text-sm text-center md:text-lg">
         {user.bio ? user.bio : "There is no bio"}
       </p>
       <div className="flex items-center text-sm w-full p-4 mt-3 justify-around bg-github-blue/50 rounded-md md:p-8 md:w-5/6 md:ml-28 md:m-3 md:text-lg ">
